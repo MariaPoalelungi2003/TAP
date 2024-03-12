@@ -1,26 +1,19 @@
-import java.lang.*;
 class ClasaDeBaza {
     private int x;
 
-    public ClasaDeBaza(int x, int y) {
-        this(x);
-        System.out.println("Constructor cu doi parametri din clasa de baza");
-    }
     public ClasaDeBaza(int x) {
-        //this.x = x;
-        this.metoda1();
+        this.x = x;
         System.out.println("Constructor cu un parametru din clasa de baza");
     }
 
     public ClasaDeBaza() {
-        this(4,5);
-        //metoda1(1);
+        this(0);
         System.out.println("Constructor fără parametri din clasa de baza");
     }
 
-
-    public void metoda1(int t) {
-        System.out.println("Metoda 1 din clasa de baza");
+    public ClasaDeBaza(int x, int y) {
+        this(x);
+        System.out.println("Constructor cu doi parametri din clasa de baza");
     }
 
     public void metoda1() {
@@ -37,7 +30,6 @@ class ClasaDerivata extends ClasaDeBaza {
 
     public ClasaDerivata() {
         super();
-        //super(1);
         System.out.println("Constructor fără parametri din clasa derivata");
     }
 
